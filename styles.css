@@ -6,24 +6,36 @@
 
 body {
     background-color: rgb(82, 46, 112);
+    min-width: 800px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
-    margin: 5% 0;
+    margin: 50px auto;
 }
 
 h1 {
     font-size: 34px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-weight: 500;
     letter-spacing: 1.5px;
     color: #fff;
+    text-shadow: 3px 3px 3px #313131;
 }
 
-.box-with-contacts {
+/***********  contacts card  
+***********/
+
+.rounded-border-card {
     display: flex;
     background-color: #fff;
     border-radius: 5px;
+    width: 458px;
+}
+
+.box-with-contacts {
+    background-color: #fff;
+    align-items: center;
 }
 
 .box-with-contacts ul {
@@ -34,40 +46,72 @@ h1 {
 
 .box-with-contacts a {
     display: flex;
-    width: 100%;
+    width: 80%;
     text-decoration: none;
     color: #000;
 }
 
-.box-with-contacts a:hover {
+.contact-gray-effect:hover {
     background-color: #ccc;
 }
 
 .box-with-contacts img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    margin-left: 5px;
 }
 
 .box-with-contacts div {
-    margin: 10px;
+    margin: 10px 15px 0 5px;
     padding: 0;
-    width: 100%;
 }
 
 .box-with-contacts li {
     display: flex;
-    gap: 15px;
     height: 100px;
+}
+
+/***********  contact  ***********/
+
+.align-card-contact {
+    display: flex;
+    justify-content: center;
 }
 
 .profile-image {
     border-radius: 50px;
 }
 
-.align-card-contact {
+.contact-information h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-information p {
+    color: #9d9d9d;
+}
+
+.small-icons {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-right: 10px;
 }
+
+.small-icons a {
+    padding: 5px;
+}
+
+
+.small-icons img {
+    width: 14px;
+    height: 15px;
+    opacity: 40%;
+}
+
+
+/***********  button  ***********/
 
 #new-contact {
     text-transform: lowercase;
@@ -75,7 +119,7 @@ h1 {
     font-weight: 600;
     margin: 20px auto;
     padding: 15px 25px;
-    width: 450px;
+    width: 350px;
     border-radius: 10px;
     color: #747474;
 }
@@ -86,8 +130,11 @@ h1 {
     box-shadow: 3px 3px 3px #000;
 }
 
+
+/***********  music  ***********/
+
 .music {
-    margin-top: 50px;
+    margin-top: 15px;
     display: flex;
     width: 450px;
 }
